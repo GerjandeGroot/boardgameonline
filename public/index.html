@@ -1,0 +1,123 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="dice.css">
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<img id="map" src="map.jpg">
+		
+		<table id="players" style="align: right">
+			<tr>
+				<th>Inventory</th>
+				<th>Name</th>
+				<th>Icon</th>
+				<th>Money</th>
+			</tr>
+		</table>
+		<br>
+		<div id="objects">
+			<img class="creatable" src="Objects/Tree.png">
+			<img class="creatable" src="Objects/Bush.PNG">
+			<img class="creatable" src="Objects/Truck.PNG">
+			<img class="creatable" src="Objects/Plane.PNG">
+			<img class="creatable" src="Objects/Factory.PNG">
+<!-- 		<img class="creatable" src="Objects/cargoShip.jpg">
+			<img class="creatable" src="Objects/loco.jpg">
+			<img class="creatable" src="Objects/Nuon.PNG">
+			<img class="creatable" src="Objects/windMill.jpg"> -->
+			<img class="creatable" src="Objects/Minigame.png">
+			<img class="creatable" src="Objects/RandomEvent.png">
+			<img class="creatable" src="Objects/Money.png">
+			<img class="creatable" src="Objects/Axe.png">			
+			<img class="creatable" src="Objects/MeepleBlue.png">			
+			<img class="creatable" src="Objects/MeepleRed.png">			
+			<img class="creatable" src="Objects/MeepleGreen.png">			
+			<img class="creatable" src="Objects/MeepleGrey.png">			
+			<img class="creatable" src="Objects/MeeplePurple.png">			
+			<img class="creatable" src="Objects/MeepleYellow.png">			
+		</div>
+		
+		<label>Global warming: </label>
+		<input type="number" id="globalWarming">
+		
+		<div id="controls"> 
+			<button id="addPlayer">Add player</button>
+			<button id="resetBoard">Reset board</button>
+		</div>
+		
+		<div id="dice" class="dice dragable" style="left: 1592px; top: 728px;">
+		  <ol class="die-list odd-roll" data-roll="1" id="die-1">
+			<li class="die-item" data-side="1">
+			  <span class="dot"></span>
+			</li>
+			<li class="die-item" data-side="2">
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			</li>
+			<li class="die-item" data-side="3">
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			</li>
+			<li class="die-item" data-side="4">
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			</li>
+			<li class="die-item" data-side="5">
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			</li>
+			<li class="die-item" data-side="6">
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			  <span class="dot"></span>
+			</li>
+		  </ol>
+		</div>
+		
+		<div id="addPlayerModal" class="modal">
+		
+			<div class="modal-content">
+				<span class="close" onclick="closeModal(this)">&times;</span>
+				<span>Name: </span><input id="playerName">
+				<br>
+				<img class="selectable" src="Players/Blue.PNG">
+				<img class="selectable" src="Players/Red.PNG">
+				<img class="selectable" src="Players/Green.PNG">
+				<img class="selectable" src="Players/Grey.PNG">
+				<img class="selectable" src="Players/Purple.PNG">
+				<img class="selectable" src="Players/Yellow.PNG">
+				<br>
+				<button id="addPlayerSubmit">Add player</button>
+			</div>
+		</div>
+		
+		<div id="resetBoardModal" class="modal">
+			<div class="modal-content">
+				<span class="close" onclick="closeModal(this)">&times;</span>
+				<p>Are you sure you want to reset the board?</p>
+				<br>
+				<button onclick="requestResetBoard(); closeModal(this);">Yes</button>
+				<button onclick="closeModal(this)">No</button>
+			</div>
+		</div>
+		
+		<br>
+		
+		<img id="prizeList" src="Objects/prizeList1.PNG">
+		
+	</body>
+</html>
+
+	
+
+	
