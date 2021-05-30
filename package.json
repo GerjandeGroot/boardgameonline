@@ -338,6 +338,6 @@
       "resolved": "https://registry.npmjs.org/vary/-/vary-1.1.2.tgz",
       "version": "1.1.2"
     },
-    "ws": "^7.4.0"
+    "ws": "^7.4.6"
   }
 }
